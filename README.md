@@ -25,8 +25,6 @@ The following are the Column-families and their corresponding attributes
     id int,
     PRIMARY KEY (id))
 
-    
-
     mykeyspace.social (
     name text,
     relation text,
@@ -39,17 +37,14 @@ The following are the Column-families and their corresponding attributes
     placevisit2 text,
     PRIMARY KEY (name))
 
-
-
-  mykeyspace.place (
+    mykeyspace.place (
     pname text,
     review text,
     cost int,
     days int,
     PRIMARY KEY (pname))
 
-
-  mykeyspace.invitedfriends (
+    mykeyspace.invitedfriends (
     num int,
     name text,
     nam1 text,
