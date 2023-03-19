@@ -50,3 +50,5 @@ The following are the Column-families and their corresponding attributes
     nam1 text,
     name2 text,
     PRIMARY KEY (num))
+  
+While selection of data, the 'ALLOW FILTERING' clause is needed if the query is filtering based on a non-primary key column
