@@ -1,7 +1,12 @@
-# Cassandra
+# Trip Collaborator
 
 Trip Collaborator is an application which will help solve the biggest problem of booking a trip among friends,family and relatives.The suggestions we either get it from various platforms but managing them is sometimes difficult.So, Trip Collaborator is used to make that easier,two users should easily be able to share preferred location of their own.There are various features that can be implemented with these.
 
+# Cassandra
+    Cassandra is a column-family database that stores data in rows with column families.
+    Cassandra provides tunable consistency that allows to balance consistency and availability. Because the data consistency is a critical requirement in trip collaborator project, so Cassandra will be a better choice to develop the project.
+
+# Redis to Column-Family
 To convert the Redis data into a Cassandra column-family database,
 
 1.Create a keyspace in Cassandra to store the data.
@@ -10,28 +15,16 @@ To convert the Redis data into a Cassandra column-family database,
 
 3.Insert the data into the column families.
 
-
-
-
-
-
 The following are the Column-families and their corresponding attributes
 
-
- 
- 
- 
- 
- 
- mykeyspace.person (
+mykeyspace.person (
     name text,
     age int,
     id int,
     PRIMARY KEY (id)
 );
 
-
- mykeyspace.social (
+mykeyspace.social (
     name text,
     relation text,
     placevisit text,
