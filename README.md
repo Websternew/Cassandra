@@ -4,7 +4,9 @@ Trip Collaborator is an application which will help solve the biggest problem of
 
 # Cassandra
     Cassandra is a column-family database that stores data in rows with column families.
-    Cassandra provides tunable consistency that allows to balance consistency and availability. Because the data consistency is a critical requirement in trip collaborator project, so Cassandra will be a better choice to develop the project.
+    Cassandra provides tunable consistency that allows to balance consistency and availability. 
+ The data consistency is a critical requirement in trip collaborator project,
+so Cassandra will be a better choice to develop the project.
 
 # Redis to Column-Family
 To convert the Redis data into a Cassandra column-family database,
@@ -17,14 +19,15 @@ To convert the Redis data into a Cassandra column-family database,
 
 The following are the Column-families and their corresponding attributes
 
-mykeyspace.person (
+    mykeyspace.person (
     name text,
     age int,
     id int,
-    PRIMARY KEY (id)
-);
+    PRIMARY KEY (id))
 
-mykeyspace.social (
+    
+
+    mykeyspace.social (
     name text,
     relation text,
     placevisit text,
@@ -34,23 +37,21 @@ mykeyspace.social (
     relation2 text,
     placevisit1 text,
     placevisit2 text,
-    PRIMARY KEY (name)
-);
+    PRIMARY KEY (name))
 
 
- mykeyspace.place (
+
+  mykeyspace.place (
     pname text,
     review text,
     cost int,
     days int,
-    PRIMARY KEY (pname)
-);
+    PRIMARY KEY (pname))
 
 
- mykeyspace.invitedfriends (
+  mykeyspace.invitedfriends (
     num int,
     name text,
     nam1 text,
     name2 text,
-    PRIMARY KEY (num)
-);
+    PRIMARY KEY (num))
