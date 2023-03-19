@@ -5,13 +5,16 @@ Trip Collaborator is an application which will help solve the biggest problem of
 To convert the Redis data into a Cassandra column-family database, we would need to perform the following steps:
 
 1.Create a keyspace in Cassandra to store the data.
+
 2.Create column families to store the data.
+
 3.Insert the data into the column families.
 
 
 The following are the Column-families and their corresponding attributes
 
 
+ 
  mykeyspace.person (
     name text,
     age int,
